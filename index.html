@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css"
+      integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/webslides.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
+    <title>Plex & Pi</title>
+  </head>
+  <body>
+    <main role="main">
+      <article id="webslides" class="horizontal">
+        <section class="slide-top">
+          <!-- Slide 1 -->
+          <span
+            class="background"
+            style="background-image: url('img/raspberry-pi.jpg');"
+          ></span>
+          <div class="wrap">
+            <div class="content-right" style="color: white;">
+              <h1><strong>Plex & Pi</strong></h1>
+              <p class="animated lightSpeedIn">
+                Media Server, Usenet Downloader & DVR
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 2 -->
+        <section class="bg-green">
+          <div class="wrap">
+            <h2><strong>Raspberry Pi Info</strong></h2>
+            <p>Various versions of Pi used</p>
+            <div class="grid vertical-align">
+              <div class="column">
+                <h4><strong>Hostname</strong></h4>
+                <p>On local network</p>
+                <ul class="description">
+                  <li><a href="#">rpi1</a></li>
+                  <li><a href="#">rpi2</a></li>
+                  <li><a href="#">rpi4</a></li>
+                  <li><a href="#">ospi</a></li>
+                  <li><a href="#">speedtest</a></li>
+                  <li><a href="#">coolongolook</a></li>
+                </ul>
+              </div>
+              <div class="column">
+                <h4><strong>Mac Add.</strong></h4>
+                <p>For assigning static I.P</p>
+                <ul class="description">
+                  <li><a href="#">b8:27:eb:08:9c:4d</a></li>
+                  <li><a href="#">b8:27:eb:0f:d8:80</a></li>
+                  <li><a href="#">b8:27:eb:0f:d8:80</a></li>
+                  <li><a href="#">b8:27:eb:f7:5b:74</a></li>
+                  <li><a href="#">b8:27:eb:cc:24:fc</a></li>
+                  <li><a href="#">dc:a6:32:61:25:04</a></li>
+                </ul>
+              </div>
+              <div class="column">
+                <h4><strong>RAM</strong></h4>
+                <p>In total</p>
+                <ul class="description">
+                  <li><a href="#">Delta</a></li>
+                  <li><a href="#">Echo</a></li>
+                  <li><a href="#">Delta</a></li>
+                  <li><a href="#">0.5GB</a></li>
+                  <li><a href="#">1GB</a></li>
+                  <li><a href="#">4GB</a></li>
+                </ul>
+              </div>
+              <div class="column">
+                <h4><strong>Versions</strong></h4>
+                <p>Various version info.</p>
+                <ul class="description">
+                  <li><a href="#">Model 1B</a></li>
+                  <li><a href="#">Model 1B</a></li>
+                  <li><a href="#">Model 2B</a></li>
+                  <li><a href="#">Model B Plus ARMv6 - Raspbian(Wheezy)</a></li>
+                  <li>
+                    <a href="#">Model 3B Plus ARMv7 - Raspbian(Stretch)</a>
+                  </li>
+                  <li><a href="#">Model 4B ARMv7 - DietPi 6.28.0</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 3 -->
+        <section class="bg-green">
+          <div class="wrap">
+            <div class="slide-top content-left">
+              <h1><strong>Operating System</strong></h1>
+              <p class="text-intro">Installation & Configuration</p>
+              <p>1. Install OS</p>
+              <p>2. Expand filesystem</p>
+              <p>3. Change pi password</p>
+              <p>4. Change locales to AU</p>
+              <p>5. Add general user</p>
+              <p>6. Change hostname</p>
+            </div>
+            <div class="content-right">
+              <p>7. Configure static i.p</p>
+              <p>8. Add .bashrc_aliases</p>
+              <p>9. Add internal hosts to /etc/hosts</p>
+              <p>10. update & upgrade</p>
+              <p>
+                11. Mount usbhdd via /etc/fstab using UUID
+                <a target="_blank" href="#slide=6">(see slide 6)</a> test read &
+                write
+              </p>
+              <p>12. Install additional software</p>
+              <p>
+                Create bash script to backup usenet apps configs and db's. Zip
+                and encrypt the backup dir -> zip -9 -r -x \*.sh -P apcd18tz
+                usenet-backup.zip ~/backup
+              </p>
+              <p>
+                13. Add pushover notification to script
+                <a target="_blank" href="#slide=9">(see slide 9)</a>
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 4 -->
+        <section class="bg-green">
+          <div class="wrap">
+            <h1><strong>SSH</strong></h1>
+            <p class="text-intro">deamon, keys & config</p>
+            <div class="content-right">
+              <p>
+                Add "ssh" file to boot dir on sd card &
+                <a
+                  href="https://hackernoon.com/raspberry-pi-headless-install-462ccabd75d0"
+                >
+                  enable ssh at install</a
+                >
+              </p>
+              <p>In user directory mkdir ~/.ssh</p>
+              <p>scp public key to ~/.ssh/authorized_keys</p>
+              <p>chmod 600 on authorized_keys file</p>
+              <p>Add config file for internal hosts</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 5 -->
+        <section class="bg-green">
+          <div class="wrap">
+            <div class="content-left">
+              <h1><strong>Samba</strong></h1>
+              <p class="text-intro">Shares and user passwords</p>
+            </div>
+            <div class="content-right">
+              <p>In /etc/samba/smb.conf modify or add the following</p>
+              <ul>
+                <li>server name=</li>
+                <li>workgroup=HOME</li>
+                <li>read only=no</li>
+                <li>Add [Plex_media] share</li>
+                <li>browseable=yes</li>
+                <li>writeable=yes</li>
+                <li>create mask=0777</li>
+                <li>dir. mask=0777</li>
+              </ul>
+              <p>
+                Test smb config with testparms <br />Add user samba password
+                with smbpasswd -a "username "
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 6 -->
+        <section class="bg-green">
+          <div class="wrap">
+            <h1><strong>Harddrive</strong></h1>
+            <p class="text-intro">Mounting via /etc/fstab</p>
+          </div>
+        </section>
+
+        <!-- Slide 7 -->
+        <section class="bg-green">
+          <div class="wrap">
+            <h1><strong>MOTD</strong></h1>
+            <p class="text-intro">What is our login message</p>
+          </div>
+        </section>
+
+        <!-- Slide 8 -->
+        <section class="bg-green">
+          <div class="wrap">
+            <h1><strong>Software</strong></h1>
+            <p class="text-intro">Installation and Configuration</p>
+          </div>
+        </section>
+
+        <!-- Slide 9 -->
+        <section class="bg-green">
+          <div class="wrap size-80">
+            <div class="content-left">
+              <h1><strong>Notifications</strong></h1>
+              <p class="text-subtitle">
+                Growl & Pushover are used to send notificatins on successful and
+                unsuccessful downloads
+              </p>
+            </div>
+            <div class="content-right">
+              <!-- <h2><strong>Growl and Pushover</strong></h2> -->
+              <div class="bg-white shadow">
+                <ul class="flexblock reasons">
+                  <li>
+                    <h2>Growl</h2>
+                    <a href="http://growl.info">Growl Home Page</a>
+                    Growl to 192.168.20.5 on port 23053
+                  </li>
+                  <li>
+                    <h2>Pushover</h2>
+                    <p>User key: uJA3ut3m4teQ7jtMjqLEPE7UH7jsCt</p>
+                    <p>Sab API Token: ayvMEXPZdeQs6hvyWaGfXXUvxaxAG6</p>
+                    <p>Sonarr API Token: aeuwkhpz8we4j98jm42h5g32v9jfe2</p>
+                    <p>Radarr API Token: at85gzpjn8vebsaadiwwtckrmhbwjx</p>
+                    <p>OSPi API Token: aLDcmk3spbHBRiZd2j18ZXPXKULxsa</p>
+                    <p>Tautilli API Token: a5dc9p19oqm5q81hpazvbyp79wqtqf</p>
+                    <p>Monit: API Token: aruXxehUNKnbWDjmB96rB7EbtgAuKH</p>
+                    <p>Lazy API Token: ab3JS8oMNMJbkuhEGqdR2Ho8JpdgV2</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 10 -->
+        <section class="bg-green">
+          <div class="wrap">
+            <h1><strong>Optional Packages</strong></h1>
+            <p class="text-intro">Installation and Configuration</p>
+          </div>
+        </section>
+
+        <!-- Slide 11 -->
+        <section class="bg-green">
+          <div class="wrap">
+            <h1><strong>Reverse Proxy</strong></h1>
+            <p class="text-intro">Configuration</p>
+          </div>
+        </section>
+
+        <!-- Slide 12 -->
+        <section class="bg-green slide-top">
+          <div class="wrap content-center">
+            <h1><strong>Current TV Shows</strong></h1>
+            <p class="text-sm-left">As at April 2020</p>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <script src="js/webslides.min.js"></script>
+    <script>
+      window.ws = new WebSlides();
+    </script>
+  </body>
+</html>
